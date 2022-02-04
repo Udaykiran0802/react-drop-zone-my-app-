@@ -9,6 +9,7 @@ export default class UploadFiles extends Component {
     super(props);
     this.upload = this.upload.bind(this);
     // this.uploadFiles = this.uploadFiles.bind(this);
+    this.uploadFiles = this.uploadFiles.bind(this)
     this.onDrop = this.onDrop.bind(this);
 
     this.state = {
@@ -74,7 +75,7 @@ export default class UploadFiles extends Component {
   
 
 
-  uploadFiles1() {
+  uploadFiles() {
     const selectedFiles = this.state.selectedFiles;
 
     let _progressInfos = [];
